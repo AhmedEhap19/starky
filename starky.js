@@ -5,9 +5,11 @@ let mountains3 = document.getElementById('mountains3')
 let mountains4 = document.getElementById('mountains4')
 let river = document.getElementById('river')
 let boat = document.getElementById('boat')
+let body = document.getElementById('body')
 
-
+behind.style.display = 'none'
 window.onscroll = function(){
+    behind.style.display = 'block'
     let value = scrollY
     stars.style.left = value + 'px'
     moon.style.top = value *4 + 'px'
@@ -25,6 +27,12 @@ window.onscroll = function(){
         }else{
             behind.style.display = 'block'
         }
+    }
+    if(scrollY >= 198){
+        body.style.background = 'linear-gradient(to top,#1f1f1f,#0089b3)'
+    }else{
+        body.style.background = 'linear-gradient(to top,#1f1f1f,#2c002c)'
+
     }
     
 }
