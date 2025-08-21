@@ -73,7 +73,8 @@ img{
     color: white;
     font-size: 20px;
     padding: 30px;
-    margin: 10px;
+    background: linear-gradient(to top, #1f1f1f, #2c002c);
+    
 }
 .h2{
     font-size: 40px;
